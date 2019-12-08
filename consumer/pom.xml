@@ -50,21 +50,27 @@
             <scope>test</scope>
         </dependency>
 
-        <!--		<dependency>-->
-        <!--			<groupId>au.com.dius</groupId>-->
-        <!--			<artifactId>pact-jvm-consumer-java8</artifactId>-->
-        <!--			<version>4.0.3</version>-->
-        <!--			<scope>test</scope>-->
-        <!--		</dependency>-->
-
     </dependencies>
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>au.com.dius</groupId>
+				<artifactId>pact-jvm-provider-maven</artifactId>
+				<version>4.0.0</version>
+				<configuration>
+					<pactDirectory>${project.build.directory}/pacts
+					</pactDirectory> <!-- Defaults to ${project.build.directory}/pacts -->
+					<pactBrokerUrl>http://localhost</pactBrokerUrl>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

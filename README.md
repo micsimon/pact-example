@@ -12,3 +12,4 @@ consumer-port: 8081
 # notes
 look at https://github.com/ArneLimburg/pact-jvm and https://github.com/Mikuu/Pact-JVM-Example#23-publish-pacts-to-pact-broker
 pact-broker https://hub.docker.com/r/dius/pact-broker
+pact-maven-plugin doku https://github.com/DiUS/pact-jvm/tree/master/provider/pact-jvm-provider-maven
