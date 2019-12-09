@@ -65,8 +65,6 @@
 				<artifactId>pact-jvm-provider-maven</artifactId>
 				<version>4.0.0</version>
 				<configuration>
-					<pactDirectory>${project.build.directory}/pacts
-					</pactDirectory> <!-- Defaults to ${project.build.directory}/pacts -->
 					<pactBrokerUrl>http://localhost</pactBrokerUrl>
 				</configuration>
 			</plugin>
