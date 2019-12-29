@@ -13,3 +13,12 @@ consumer-port: 8081
 look at https://github.com/ArneLimburg/pact-jvm and https://github.com/Mikuu/Pact-JVM-Example#23-publish-pacts-to-pact-broker
 pact-broker https://hub.docker.com/r/dius/pact-broker
 pact-maven-plugin doku https://github.com/DiUS/pact-jvm/tree/master/provider/pact-jvm-provider-maven
+
+# how to publish and verify a pact
+cd consumer
+mvn clean test pact:publish
+
+cd ..
+
+cd provider
+mvn clean test
