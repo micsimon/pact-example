@@ -46,7 +46,7 @@
         <dependency>
             <groupId>au.com.dius</groupId>
             <artifactId>pact-jvm-consumer-junit</artifactId>
-            <version>4.0.3</version>
+            <version>4.0.4</version>
             <scope>test</scope>
         </dependency>
 
@@ -61,9 +61,15 @@
 			</plugin>
 
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.21.0</version>
+			</plugin>
+
+			<plugin>
 				<groupId>au.com.dius</groupId>
 				<artifactId>pact-jvm-provider-maven</artifactId>
-				<version>4.0.0</version>
+				<version>4.0.4</version>
 				<configuration>
 					<pactBrokerUrl>http://localhost</pactBrokerUrl>
 				</configuration>

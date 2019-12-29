@@ -32,7 +32,8 @@ public class PersonServiceTest {
         Map<String, String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json;charset=UTF-8");
 
-        return builder.uponReceiving("get person from provider")
+        return builder.given("getPerson")
+                      .uponReceiving("get person from provider")
                       .path("/person")
                       .method("GET")
                       .willRespondWith()
