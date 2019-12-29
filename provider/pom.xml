@@ -70,6 +70,10 @@
                             <name>pact.verifier.publishResults</name>
                             <value>true</value>
                         </property>
+                        <property>
+                            <name>pact.showStacktrace</name>
+                            <value>true</value>
+                        </property>
                     </systemProperties>
                 </configuration>
             </plugin>
@@ -92,9 +96,6 @@
                         </serviceProvider>
                     </serviceProviders>
                     <pactBrokerUrl>http://localhost</pactBrokerUrl>
-                    <configuration>
-                        <pact.showStacktrace>true</pact.showStacktrace>
-                    </configuration>
                 </configuration>
             </plugin>
 
